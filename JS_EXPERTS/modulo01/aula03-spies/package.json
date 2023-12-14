@@ -1,0 +1,17 @@
+{
+  "name": "aula01-mocks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/fibonacci.test.js"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "author": "thalissonbandeira",
+  "license": "ISC",
+  "devDependencies": {
+    "sinon": "^15.2.0"
+  }
+}

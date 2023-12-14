@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Node 14 example!",
+  "main": "index.mjs",
+  "type": "module",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  
+  "scripts": {
+    "test:agent": "mkdir -p reports && DEBUG=agent:* nodemon --exec node --experimental-json-modules --experimental-top-level-await agent/**.test.js",
+    "test:app": "DEBUG=app:* nodemon --exec node --experimental-json-modules --experimental-top-level-await api/**.test.js",
+    "start": "DEBUG=app:* nodemon --exec node --experimental-json-modules --experimental-top-level-await api/index.js"
+  },
+  "nodemonConfig": {
+    "ignore": ["report*"]
+  },
+  "keywords": [],
+  "author": "erickwendel",
+  "license": "ISC"
+}

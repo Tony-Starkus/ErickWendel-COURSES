@@ -1,0 +1,7 @@
+nvm install 19 -> instala a versão 19
+nvm install --lts -> instala a versão long-term support (versão recomendada)
+nvm list
+nvm use 18 -> usa a 18 que já está instalada na minha máquina
+nvm alias default 18 -> define a versão 18 para ser sempre a default em todos os terminais
+
+criar o .nvmrc com a versão desejada e nvm use para ativar aquela versão

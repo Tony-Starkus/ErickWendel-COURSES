@@ -1,0 +1,23 @@
+[
+  {
+    "id": "96051bbf-06c0-4a4c-aa54-7cf31f775303",
+    "name": "Land Cruiser",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "e6ed387f-4575-461e-9a6e-49c7692cc47c",
+    "name": "Golf",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "c255fcff-eca9-432b-90cf-8ee1ec67424e",
+    "name": "Colorado",
+    "releaseYear": 2023,
+    "available": true,
+    "gasAvailable": true
+  }
+]
