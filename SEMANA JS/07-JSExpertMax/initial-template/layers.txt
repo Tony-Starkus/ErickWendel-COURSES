@@ -1,0 +1,21 @@
+workers -> (Processo em segundo plano)
+  -> Toda lógica pesada (que envolva CPU)
+  -> Tudo que pode travara tela (for loop, machine learning, AI, processamento de Web CAM)
+  -> Ele chama as regras de negócio da service
+
+services ->
+  -> Toda a lógica de negócio
+  -> Toda chamada externa (API, arquivos, banco de dados)
+
+views ->
+  -> Toda interação com o DOM (com o HTML, com a página)
+
+contollers ->
+  -> É a intermediária entre services e/ou workers e views
+
+factories ->
+  -> A factory é quem importa as dependências
+  -> Cria o objecto final para fazermos os chamadas
+  -> Retorna a função que inicializa o fluxo daquele component (init)
+
+index.js -> Responsável por chamar todas as camadas
